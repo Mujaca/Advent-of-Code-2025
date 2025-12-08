@@ -7,7 +7,7 @@ const completeList = text.split("\n");
 const splitPoint = completeList.findIndex((v) => v == "");
 
 const freshIngredients = completeList.slice(0, splitPoint)
-.map((range) => {
+.map((range) => {	
 	const rangeSplit = range.split("-");
 	return [parseInt(rangeSplit[0]), parseInt(rangeSplit[1])]
 })
